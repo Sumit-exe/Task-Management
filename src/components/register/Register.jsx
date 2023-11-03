@@ -29,7 +29,7 @@ function Register() {
 
     const checkUserExists = async () => {
         try {
-            const response = await fetch(`http://localhost:8000/user/?username=${username}`);
+            const response = await fetch(`https://registeredusers.onrender.com/user/?username=${username}`);
             if (response.status === 200) {
                 return true; // User already exists
             } else if (response.status === 404) {
@@ -54,7 +54,7 @@ function Register() {
             if (userExists) {
                 const registerObject = { username, password };
 
-                fetch("http://localhost:8000/user", {
+                fetch("https://registeredusers.onrender.com/user", {
                     method: "POST",
                     headers: { 'content-type': 'application/json' },
                     body: JSON.stringify(registerObject)

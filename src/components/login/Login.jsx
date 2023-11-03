@@ -17,7 +17,7 @@ function Login() {
   const ProceedLogin =(e)=>{
     e.preventDefault();
     if(validate()){
-      fetch(`http://localhost:8000/user/?username=${username}`)
+      fetch(`https://registeredusers.onrender.com/user/?username=${username}`)
       .then((res)=>{
         // console.log(res)
         return res.json();
