@@ -1,0 +1,6 @@
+ const userExists=()=>{
+        let isProceed = true;
+        fetch(`http://localhost:8000/user/?username=${username}`)
+        .then((res)=>res.json())
+        
+    }

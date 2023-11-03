@@ -1,0 +1,17 @@
+.app header{
+    width: 100vw;
+    background-color: pink;
+    padding: 15px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a:-webkit-any-link {
+    text-decoration: none;
+    color: inherit;
+  }
+.headerLinks{
+    display: flex;
+    gap: 1rem;
+}

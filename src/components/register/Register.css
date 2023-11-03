@@ -1,0 +1,49 @@
+.register{
+    width: 100vw;
+    height: 100vh;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.register form{
+    width: 30rem;
+    height: 22rem;
+    padding: 40px 10px 50px;
+    background-color: #a7bff2;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: center; */
+    gap: 1rem;
+    border-radius: 10px;
+}
+form .formInputs{
+    width: 80%;
+    padding: 5px;
+}
+form .inputField{
+    width: 100%;
+    padding: 5px;
+}
+form .inputField input{
+    width: 100%;
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    outline: 0;
+    font-size: 18px;
+}
+label span{
+    color: red;
+}
+.register form button{
+    background-color: #170567;
+    color: #fff;
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    width: 60%;
+}
